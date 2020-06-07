@@ -5,6 +5,22 @@
 body {
   font-family: "GenjyuugothicMedium"; }
 
+h1 {
+  color: #5BC2C3;
+  font-size: 36px;
+  text-align: center;
+  margin: 144px 0; }
+
+p {
+  width: 100%;
+  font-size: 18px;
+  color: #4F5E60;
+  line-height: 250%; }
+
+.container {
+  width: 70%;
+  margin: 0 auto; }
+
 .top_logo {
   display: flex;
   align-items: center; }
@@ -20,12 +36,15 @@ body {
   .top_nav ul {
     display: flex;
     width: 1200px;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center; }
     .top_nav ul li {
       list-style: none; }
       .top_nav ul li a {
         text-decoration: none;
         color: #5BC2C3;
         font-size: 16px; }
+        .top_nav ul li a:hover {
+          opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,10 +6,33 @@
 }
 
 $font-medium: "GenjyuugothicMedium";
-$fams-blue: #5BC2C3;
+$font-regular:"GenjyuugothicRegular";
+$color-blue: #5BC2C3;
+$color-black: #4F5E60;
+$font-size-h1:36px;
+$font-size-p:18px;
 
 body {
     font-family: $font-medium;
+}
+
+h1 {
+    color: $color-blue;
+    font-size: $font-size-h1;
+    text-align: center;
+    margin: 144px 0;
+}
+
+p {
+    width: 100%;
+    font-size: $font-size-p;
+    color: $color-black;
+    line-height: 250%;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .top_logo {
@@ -32,14 +55,19 @@ body {
         display: flex;
         width: 1200px;
         justify-content: space-around;
+        align-items: center;
 
         li {
             list-style: none;
 
             a {
                 text-decoration: none;
-                color: $fams-blue;
+                color: $color-blue;
                 font-size: 16px;
+
+                &:hover {
+                    opacity: 0.5;
+                }
             }
         }
     }
