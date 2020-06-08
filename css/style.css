@@ -3,13 +3,23 @@
   padding: 0; }
 
 body {
-  font-family: "GenjyuugothicMedium"; }
+  font-family: "GenjyuugothicRegular"; }
 
 h1 {
   color: #5BC2C3;
   font-size: 36px;
   text-align: center;
-  margin: 144px 0; }
+  margin: 160px 0; }
+
+h2 {
+  color: #4F5E60;
+  font-size: 24px; }
+
+.en {
+  font-family: "all-round-gothic" !important;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.2em; }
 
 p {
   width: 100%;
@@ -46,5 +56,55 @@ p {
         font-size: 16px; }
         .top_nav ul li a:hover {
           opacity: 0.5; }
+
+.content_box1 {
+  display: flex;
+  width: 100%;
+  margin: 192px 0;
+  justify-content: space-around;
+  align-items: center; }
+  .content_box1 p {
+    width: 512px; }
+  .content_box1 img {
+    width: 400px;
+    height: 400px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-shadow: 4px 4px 200px rgba(0, 0, 0, 0.05); }
+
+.content_box1:nth-child(2n) {
+  flex-flow: row-reverse; }
+
+.content_box2 {
+  display: flex;
+  width: 100%;
+  align-items: flex-end; }
+  .content_box2 .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 25%; }
+    .content_box2 .content img {
+      width: 100%; }
+    .content_box2 .content p {
+      text-align: center;
+      color: #5BC2C3;
+      font-size: 16px;
+      margin: 24px auto; }
+
+table {
+  margin: 0 auto;
+  width: 90%;
+  color: #4F5E60;
+  border-collapse: collapse; }
+  table th, table td {
+    border-top: solid 1px #C4C4C4;
+    border-bottom: solid 1px #C4C4C4;
+    padding: 16px 40px; }
+  table th {
+    background-color: #F6FDFD;
+    text-align: left; }
+  table tr {
+    line-height: 3.5em; }
 
 /*# sourceMappingURL=style.css.map */

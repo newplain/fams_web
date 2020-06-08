@@ -3,13 +3,13 @@
 @font-face {
     font-family: "GenjyuugothicMedium";
     font-style: "Medium";
-    font-weight: 400;
+    font-weight: 200;
     src: url("/font/Genjyuugothic/Genjyuugothic-Medium.woff") format("woff");
 }
 
 @font-face {
     font-family: "GenjyuugothicRegular";
     font-style: "Regular";
-    font-weight: 200;
+    font-weight: 100;
     src: url("/font/Genjyuugothic/Genjyuugothic-Regular.woff") format("woff");
 }
