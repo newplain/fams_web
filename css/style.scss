@@ -43,6 +43,14 @@ p {
     line-height: 250%;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 70%;
     margin: 0 auto;
@@ -71,10 +79,7 @@ p {
         align-items: center;
 
         li {
-            list-style: none;
-
             a {
-                text-decoration: none;
                 color: $color-blue;
                 font-size: 16px;
 
@@ -149,9 +154,55 @@ table {
     th {
         background-color: #F6FDFD;
         text-align: left;
+        width: 160px;
     }
 
     tr {
         line-height: 3.5em;
+    }
+}
+
+footer {
+    margin: 80px 0;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+    flex-direction: column;
+
+    img {
+        width: 250px;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 200;
+        margin-top: 24px;
+    }
+}
+
+.flex_box {
+    width: 100%;
+    display: flex;
+    justify-content: center
+}
+
+.fotter_column {
+    width: 160px;
+
+    ul {
+        li {
+            color: $color-blue;
+            font-size: 14px;
+            font-weight: 400;
+            padding: 8px;
+
+            a {
+                color: $color-black;
+                font-size: 12px;
+            }
+        }
     }
 }
