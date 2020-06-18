@@ -5,15 +5,27 @@
 body {
   font-family: "GenjyuugothicRegular"; }
 
+.fams_back {
+  background-image: url(../img/background/background.svg);
+  background-size: cover;
+  background-repeat: repeat-y; }
+
 h1 {
   color: #5BC2C3;
+  font-weight: 350;
   font-size: 36px;
   text-align: center;
   margin: 160px 0; }
 
+.top_message {
+  margin: 80px 0 !important; }
+
 h2 {
   color: #4F5E60;
-  font-size: 24px; }
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 250%; }
 
 .en {
   font-family: "all-round-gothic" !important;
@@ -131,6 +143,9 @@ footer {
   display: flex;
   justify-content: center; }
 
+.flex_end {
+  align-items: flex-end; }
+
 .fotter_column {
   width: 160px; }
   .fotter_column ul li {
@@ -141,5 +156,21 @@ footer {
     .fotter_column ul li a {
       color: #4F5E60;
       font-size: 12px; }
+
+.button_blue {
+  display: inline-block;
+  background-color: #5BC2C3;
+  border-radius: 80px;
+  margin: 48px;
+  padding: 24px 48px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  box-shadow: 0 24px 72px 0 rgba(91, 194, 195, 0.2);
+  transition: box-shadow 0.5s; }
+  .button_blue:hover {
+    box-shadow: 0 24px 72px 0 rgba(91, 194, 195, 0.4);
+    transition: box-shadow 0.2s; }
 
 /*# sourceMappingURL=style.css.map */

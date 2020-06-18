@@ -17,16 +17,30 @@ body {
     font-family: $font-regular;
 }
 
+.fams_back {
+    background-image: url(../img/background/background.svg);
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
 h1 {
     color: $color-blue;
+    font-weight: 350;
     font-size: $font-size-h1;
     text-align: center;
     margin: 160px 0;
 }
 
+.top_message {
+    margin: 80px 0 !important;
+}
+
 h2 {
     color: $color-black;
-    font-size: $font-size-h2;
+    font-size: $font-size-p;
+    font-weight: 400;
+    text-align: center;
+    line-height: 250%;
 }
 
 .en {
@@ -189,6 +203,10 @@ footer {
     justify-content: center
 }
 
+.flex_end {
+    align-items: flex-end;
+}
+
 .fotter_column {
     width: 160px;
 
@@ -204,5 +222,24 @@ footer {
                 font-size: 12px;
             }
         }
+    }
+}
+
+.button_blue {
+    display: inline-block;
+    background-color: $color-blue;
+    border-radius: 80px;
+    margin: 48px;
+    padding: 24px 48px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    box-shadow: 0 24px 72px 0 rgba(91,194,195,0.2);
+    transition: box-shadow 0.5s;
+
+    &:hover {
+        box-shadow: 0 24px 72px 0 rgba(91,194,195,0.4);
+        transition: box-shadow 0.2s;
     }
 }
