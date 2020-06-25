@@ -1,85 +1,11 @@
 @charset "UTF-8";
 
+
+//リセット
+
 * {
     margin: 0;
     padding: 0;
-}
-
-$font-bold: "GenjyuugothicBold";
-$font-medium: "GenjyuugothicMedium";
-$font-regular:"GenjyuugothicRegular";
-$color-blue: #5BC2C3;
-$color-black: #4F5E60;
-$font-size-h1:48px;
-$font-size-h2:24px;
-$font-size-p:18px;
-
-body {
-    font-family: $font-regular, $font-bold, $font-medium;
-}
-
-.fams_back {
-    background-image: url(../img/background/background.svg);
-    background-size: 100%;
-    background-repeat: repeat-y;
-}
-
-
-
-
-h1 {
-    font-size: $font-size-h1;
-    font-weight: 350;
-    text-align: center;
-}
-
-h2 {
-    font-size: $font-size-h2;
-    font-weight: 400;
-    text-align: center;
-    line-height: 250%;
-}
-
-.color_blue {
-    color: $color-blue;
-}
-
-.color_black {
-    color: $color-black;
-}
-
-.margin_160_0 {
-    margin: 160px 0;
-}
-
-.margin_160_16 {
-    margin: 160px 0 16px;
-}
-
-.margin_80_0 {
-    margin: 80px 0;
-}
-
-.margin_16_160 {
-    margin: 16px 0 160px;
-}
-
-.en {
-    font-family: "all-round-gothic" !important;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0.2em;
-}
-
-
-
-
-
-p {
-    width: 100%;
-    font-size: $font-size-p;
-    color: $color-black;
-    line-height: 250%;
 }
 
 li {
@@ -90,14 +16,166 @@ a {
     text-decoration: none;
 }
 
+//フォントの呼び出し
+
+$font-bold: "GenjyuugothicBold";
+$font-medium: "GenjyuugothicMedium";
+$font-regular:"GenjyuugothicRegular";
+$color-blue: #5BC2C3;
+$color-black: #4F5E60;
+$font-size-48:48px;
+$font-size-24:24px;
+$font-size-18:18px;
+$font-size-16:16px;
+
+body {
+    font-family: $font-regular, $font-bold, $font-medium;
+}
+
+//ヘッダー関連
+
+h1 {
+    font-size: $font-size-48;
+    font-weight: 350;
+    text-align: center;
+}
+
+h2 {
+    font-size: $font-size-24;
+    font-weight: 400;
+    text-align: center;
+    line-height: 250%;
+}
+
+
+//色
+
+.color_blue {
+    color: $color-blue;
+}
+
+.color_black {
+    color: $color-black;
+}
+
+
+//width
+
+.width_100 {
+    width: 100%;
+}
+
+.width_80 {
+    width: 80%;
+}
+
+
+//マージン
+
+.margin_0_auto {
+    margin: 0 auto;
+}
+
+.margin_160_0 {
+    margin: 160px 0;
+}
+
+.margin_160_16 {
+    margin: 160px 0 16px;
+}
+
+.margin_192_0 {
+    margin: 192px 0;
+}
+
+.margin_80_0 {
+    margin: 80px 0;
+}
+
+.margin_96_0 {
+    margin: 96px 0;
+}
+
+.margin_16_160 {
+    margin: 16px 0 160px;
+}
+
+//textalign
+.text_align {
+    text-align: center;
+}
+
+//英語ヘッダーの場合の指定
+
+.en {
+    font-family: "all-round-gothic" !important;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+p {
+    width: 100%;
+    font-size: $font-size-16;
+    color: $color-black;
+    line-height: 250%;
+}
+
+//container
+
 .container {
     width: 70%;
     margin: 0 auto;
 }
 
-.top_logo {
+//block化
+
+.display_block {
+    display: block;
+}
+
+
+//flex関連
+
+.flex_box {
     display: flex;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+.flex_end {
+    align-items: flex-end;
+}
+
+.flex_reverse {
+    flex-flow: row-reverse;
+}
+
+.flex_direction_column {
+    flex-direction: column;
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+.justify_content_spacearound {
+    justify-content: space-around;
+}
+
+.align_items_flexstart {
+    align-items: flex-start;
+}
+
+.align_items_center {
     align-items: center;
+}
+
+
+//トップロゴ
+.top_logo {
 
     img {
         width: 300px;
@@ -106,21 +184,18 @@ a {
     }
 }
 
+
+//トップナビゲーション
 .top_nav {
-    margin: 96px 0px;
-    display: flex;
-    justify-content: center;
 
     ul {
-        display: flex;
-        width: 1200px;
-        justify-content: space-around;
-        align-items: center;
+        width: 83%;
 
         li {
             a {
                 color: $color-blue;
                 font-size: 16px;
+                transition: 0.5s;
 
                 &:hover {
                     opacity: 0.5;
@@ -130,49 +205,41 @@ a {
     }
 }
 
+//contentbox
+
 .content_box1 {
-    display: flex;
-    width: 100%;
-    margin: 192px 0;
-    justify-content: space-around;
-    align-items: center;
 
     p {
-        width: 512px;
+        width: 50%;
+        font-size: $font-size-18;
     }
 
     img {
-        width: 400px;
-        height: 400px;
+        width: 40%;
+        height: 40%;
         border-radius: 40px;
         object-fit: cover;
         box-shadow: 4px 4px 200px rgba($color: #000000, $alpha: 0.05);
     }
-}
 
-.content_box1:nth-child(2n) {
-    flex-flow: row-reverse;
+    &:nth-child(2n) {
+        flex-flow: row-reverse;
+    }
 }
 
 .content_box2 {
-    display: flex;
-    width: 100%;
-    align-items: flex-end;
 
     .content {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
         width: 25%;
 
         img {
-            width: 160px;
+            width: 60%;
         }
 
         p {
             text-align: center;
             color: $color-blue;
-            font-size: 16px;
+            font-size: $font-size-16;
             margin: 24px auto;
         }
     }
@@ -220,16 +287,6 @@ footer {
         font-weight: 200;
         margin-top: 24px;
     }
-}
-
-.flex_box {
-    width: 100%;
-    display: flex;
-    justify-content: center
-}
-
-.flex_end {
-    align-items: flex-end;
 }
 
 .fotter_column {
@@ -350,160 +407,5 @@ footer {
         width: 100%;
         margin: 32px auto;
         text-align: center;
-    }
-}
-
-.flex_reverse {
-    flex-flow: row-reverse;
-}
-
-.customervoice {
-    text-align: center;
-    width: 100%;
-
-    details {
-        margin: 64px auto;
-        width: 824px;
-        height: 200px;
-        background-color: white;
-        border-radius: 100px;
-        box-shadow: 0 24px 48px 0 rgba(0,0,0,0.1);
-        transition: all 0.5s;
-        overflow: hidden;
-
-        &:hover {
-            box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
-        }
-
-        &[open] {
-            height: 500px;
-        }
-
-        &[open] p {
-            animation: fadeIn 1s ease;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        summary {
-            display: flex;
-            list-style: none;
-            align-items: center;
-            outline: none;
-
-            span {
-                width: 65%;
-                font-family: $font-bold;
-                font-weight: 500;
-                font-size: 36px;
-                margin-left: 48px;
-                text-align: center;
-            }
-
-            img {
-                display: block;
-                width: 144px;
-                border-radius: 72px;
-                margin: 24px 0 24px 64px;
-            }
-        }
-
-        summary::-webkit-details-marker {
-            display:none;
-        }
-        
-        p {
-            font-size: 18px;
-            line-height: 250%;
-            width: 80%;
-            padding: 24px 0 40px;
-            margin: 0 auto;
-        }
-    }
-}
-
-.qanda {
-    width: 100%;
-
-    details {
-        margin: 64px auto;
-        width: 400px;
-        height: 160px;
-        background-color: white;
-        border-radius: 56px;
-        border: solid 2px $color-blue;
-        transition: all 0.5s;
-        overflow: hidden;
-
-        &[open] {
-            height: 800px;
-        }
-
-        &[open] .answer,p {
-            animation: fadeIn 1s ease;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        summary {
-            display: flex;
-            height: 160px;
-            list-style: none;
-            align-items: center;
-            outline: none;
-
-            span {
-                font-size: 48px;
-                margin-left: 48px;
-            }
-
-            h2 {
-                margin: 0 24px;
-                width: 240px;
-            }
-        }
-
-        summary::-webkit-details-marker {
-            display:none;
-        }
-        
-        .answer {
-            display: flex;
-            margin: 56px 0;
-            align-items: center;
-
-            span {
-                font-size: 48px;
-                margin-left: 48px;
-            }
-
-            h2 {
-                margin: 0 24px;
-                width: 240px;
-            }
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 250%;
-            width: 75%;
-            margin: 0 auto;
-        }
     }
 }

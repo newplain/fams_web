@@ -31,9 +31,6 @@ h2 {
 .width_100 {
   width: 100%; }
 
-.width_80 {
-  width: 80%; }
-
 .margin_0_auto {
   margin: 0 auto; }
 
@@ -73,9 +70,6 @@ p {
 .container {
   width: 70%;
   margin: 0 auto; }
-
-.display_block {
-  display: block; }
 
 .flex_box {
   display: flex; }
@@ -260,4 +254,98 @@ footer {
     margin: 32px auto;
     text-align: center; }
 
-/*# sourceMappingURL=style.css.map */
+.mama_back {
+  background-image: url(../img/background/background.svg);
+  background-size: 100%;
+  background-repeat: repeat-y; }
+
+.customervoice {
+  margin: 64px auto;
+  width: 824px;
+  height: 200px;
+  background-color: white;
+  border-radius: 100px;
+  box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
+  overflow: hidden; }
+  .customervoice:hover {
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2); }
+  .customervoice[open] {
+    height: 500px; }
+  .customervoice[open] p {
+    animation: fadeIn 1s ease; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .customervoice summary {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    outline: none; }
+    .customervoice summary span {
+      width: 65%;
+      font-family: "GenjyuugothicBold";
+      font-weight: 500;
+      font-size: 36px;
+      margin-left: 48px;
+      text-align: center; }
+    .customervoice summary img {
+      display: block;
+      width: 144px;
+      border-radius: 72px;
+      margin: 24px 0 24px 64px; }
+  .customervoice summary::-webkit-details-marker {
+    display: none; }
+  .customervoice p {
+    font-size: 18px;
+    line-height: 250%;
+    width: 80%;
+    padding: 24px 0 40px;
+    margin: 0 auto; }
+
+.qanda {
+  width: 45%;
+  margin: 48px 0;
+  background-color: white;
+  border-radius: 56px;
+  border: solid 2px #5BC2C3;
+  transition: all 0.5s;
+  overflow: hidden; }
+  .qanda[open] {
+    animation: fadeIn 1s ease; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .qanda summary {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    outline: none; }
+    .qanda summary span {
+      font-size: 48px;
+      margin: 32px 48px; }
+    .qanda summary h2 {
+      width: 60%;
+      margin: 32px 0; }
+  .qanda summary::-webkit-details-marker {
+    display: none; }
+  .qanda .qanda_box {
+    display: flex;
+    width: 100%;
+    align-items: center; }
+    .qanda .qanda_box span {
+      font-size: 48px;
+      margin: 32px 48px; }
+    .qanda .qanda_box h2 {
+      width: 60%;
+      margin: 32px 0; }
+  .qanda p {
+    width: 80%;
+    margin: 0 auto 48px; }
+
+/*# sourceMappingURL=mama.css.map */
