@@ -299,4 +299,54 @@ footer {
       padding: 24px 0 40px;
       margin: 0 auto; }
 
+.qanda {
+  width: 100%; }
+  .qanda details {
+    margin: 64px auto;
+    width: 400px;
+    height: 160px;
+    background-color: white;
+    border-radius: 56px;
+    border: solid 2px #5BC2C3;
+    transition: all 0.5s;
+    overflow: hidden; }
+    .qanda details[open] {
+      height: 800px; }
+    .qanda details[open] .answer, .qanda details p {
+      animation: fadeIn 1s ease; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .qanda details summary {
+      display: flex;
+      height: 160px;
+      list-style: none;
+      align-items: center;
+      outline: none; }
+      .qanda details summary span {
+        font-size: 48px;
+        margin-left: 48px; }
+      .qanda details summary h2 {
+        margin: 0 24px;
+        width: 240px; }
+    .qanda details summary::-webkit-details-marker {
+      display: none; }
+    .qanda details .answer {
+      display: flex;
+      margin: 56px 0;
+      align-items: center; }
+      .qanda details .answer span {
+        font-size: 48px;
+        margin-left: 48px; }
+      .qanda details .answer h2 {
+        margin: 0 24px;
+        width: 240px; }
+    .qanda details p {
+      font-size: 18px;
+      line-height: 250%;
+      width: 75%;
+      margin: 0 auto; }
+
 /*# sourceMappingURL=style.css.map */

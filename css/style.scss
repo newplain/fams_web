@@ -429,3 +429,81 @@ footer {
         }
     }
 }
+
+.qanda {
+    width: 100%;
+
+    details {
+        margin: 64px auto;
+        width: 400px;
+        height: 160px;
+        background-color: white;
+        border-radius: 56px;
+        border: solid 2px $color-blue;
+        transition: all 0.5s;
+        overflow: hidden;
+
+        &[open] {
+            height: 800px;
+        }
+
+        &[open] .answer,p {
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        summary {
+            display: flex;
+            height: 160px;
+            list-style: none;
+            align-items: center;
+            outline: none;
+
+            span {
+                font-size: 48px;
+                margin-left: 48px;
+            }
+
+            h2 {
+                margin: 0 24px;
+                width: 240px;
+            }
+        }
+
+        summary::-webkit-details-marker {
+            display:none;
+        }
+        
+        .answer {
+            display: flex;
+            margin: 56px 0;
+            align-items: center;
+
+            span {
+                font-size: 48px;
+                margin-left: 48px;
+            }
+
+            h2 {
+                margin: 0 24px;
+                width: 240px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 250%;
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+}
