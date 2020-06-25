@@ -27,6 +27,7 @@ $font-size-48:48px;
 $font-size-24:24px;
 $font-size-18:18px;
 $font-size-16:16px;
+$font-size-12:12px;
 
 body {
     font-family: $font-regular, $font-bold, $font-medium;
@@ -245,6 +246,37 @@ p {
     }
 }
 
+
+//ボタン
+
+.button_blue {
+    display: inline-block;
+    background-color: $color-blue;
+    border-radius: 80px;
+    margin: 48px;
+    padding: 24px 48px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    box-shadow: 0 24px 72px 0 rgba(91,194,195,0.2);
+    transition: box-shadow 0.5s;
+
+    &:hover {
+        box-shadow: 0 24px 72px 0 rgba(91,194,195,0.4);
+        transition: box-shadow 0.2s;
+    }
+}
+
+.button_blue_linear {
+    color: $color-blue;
+    padding: 16px 32px;
+    border: 2px solid;
+    border-color: $color-blue;
+    border-radius: 12px;
+}
+
+
 table {
     margin: 0 auto;
     width: 90%;
@@ -290,39 +322,20 @@ footer {
 }
 
 .fotter_column {
-    width: 160px;
+    width: 15%;
 
     ul {
         li {
             color: $color-blue;
-            font-size: 14px;
+            font-size: $font-size-16;
             font-weight: 400;
             padding: 8px;
 
             a {
                 color: $color-black;
-                font-size: 12px;
+                font-size: $font-size-12;
             }
         }
-    }
-}
-
-.button_blue {
-    display: inline-block;
-    background-color: $color-blue;
-    border-radius: 80px;
-    margin: 48px;
-    padding: 24px 48px;
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: center;
-    box-shadow: 0 24px 72px 0 rgba(91,194,195,0.2);
-    transition: box-shadow 0.5s;
-
-    &:hover {
-        box-shadow: 0 24px 72px 0 rgba(91,194,195,0.4);
-        transition: box-shadow 0.2s;
     }
 }
 
@@ -384,14 +397,6 @@ footer {
     flex-flow: row-reverse;
 }
 */
-
-.button_blue_linear {
-    color: $color-blue;
-    padding: 16px 32px;
-    border: 2px solid;
-    border-color: $color-blue;
-    border-radius: 12px;
-}
 
 .content_box4 {
     width: 100%;
