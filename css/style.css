@@ -3,7 +3,7 @@
   padding: 0; }
 
 body {
-  font-family: "GenjyuugothicRegular"; }
+  font-family: "GenjyuugothicRegular", "GenjyuugothicBold", "GenjyuugothicMedium"; }
 
 .fams_back {
   background-image: url(../img/background/background.svg);
@@ -253,5 +253,50 @@ footer {
 .customervoice {
   text-align: center;
   width: 100%; }
+  .customervoice details {
+    margin: 64px auto;
+    width: 824px;
+    height: 200px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 24px 48px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    overflow: hidden; }
+    .customervoice details:hover {
+      box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2); }
+    .customervoice details[open] {
+      height: 500px; }
+    .customervoice details[open] p {
+      animation: fadeIn 1s ease; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+    .customervoice details summary {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      outline: none; }
+      .customervoice details summary span {
+        width: 65%;
+        font-family: "GenjyuugothicBold";
+        font-weight: 500;
+        font-size: 36px;
+        margin-left: 48px;
+        text-align: center; }
+      .customervoice details summary img {
+        display: block;
+        width: 144px;
+        border-radius: 72px;
+        margin: 24px 0 24px 64px; }
+    .customervoice details summary::-webkit-details-marker {
+      display: none; }
+    .customervoice details p {
+      font-size: 18px;
+      line-height: 250%;
+      width: 80%;
+      padding: 24px 0 40px;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

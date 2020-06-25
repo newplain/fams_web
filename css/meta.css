@@ -13,3 +13,10 @@
     font-weight: 100;
     src: url("/font/Genjyuugothic/Genjyuugothic-Regular.woff") format("woff");
 }
+
+@font-face {
+    font-family: "GenjyuugothicBold";
+    font-style: "Bold";
+    font-weight: 500;
+    src: url("/font/Genjyuugothic/Genjyuugothic-Bold.woff") format("woff");
+}
