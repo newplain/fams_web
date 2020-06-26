@@ -53,6 +53,31 @@ h2 {
 }
 
 
+//スイッチ
+.fams_switch {
+    display: flex;
+    width: 25%;
+    background-color: $color-blue;
+    border-radius: 56px;
+    margin: 16px 120px;
+    box-shadow: 0px 0px 16px rgba($color: #000000, $alpha: 0.1) inset;
+
+    a {
+        text-align: center;
+        width: 33%;
+        padding: 16px 20px;
+        color: white;
+
+        &.active {
+            color: $color-black;
+            background-color: white;
+            border-radius: 56px;
+            box-shadow: 0px 0px 16px rgba($color: #000000, $alpha: 0.1);
+        }
+    }
+}
+
+
 //色
 
 .color_blue {
@@ -154,13 +179,6 @@ h2 {
     letter-spacing: 0.2em;
 }
 
-p {
-    width: 100%;
-    font-size: $font-size-16;
-    color: $color-black;
-    line-height: 250%;
-}
-
 //container
 
 .container {
@@ -203,6 +221,10 @@ p {
 
 .justify_content_spacearound {
     justify-content: space-around;
+}
+
+.justify_content_spacebetween {
+    justify-content: space-between;
 }
 
 .align_items_flexstart {
@@ -431,4 +453,210 @@ footer {
 .text_24_white {
     font-size: $font-size-24;
     color: white;
+}
+
+.mama_back {
+    background-image: url(../img/background/background.svg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.customervoice {
+    margin: 64px auto;
+    width: 824px;
+    height: 200px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0 24px 48px 0 rgba(0,0,0,0.1);
+    transition: all 0.5s;
+    overflow: hidden;
+
+    &:hover {
+        box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    }
+
+    &[open] {
+        height: 500px;
+    }
+
+    &[open] p {
+        animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    summary {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        outline: none;
+
+        span {
+            width: 65%;
+            font-family: $font-bold;
+            font-weight: 500;
+            font-size: 36px;
+            margin-left: 48px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            width: 144px;
+            border-radius: 72px;
+            margin: 24px 0 24px 64px;
+        }
+    }
+
+    summary::-webkit-details-marker {
+        display:none;
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 250%;
+        width: 80%;
+        padding: 24px 0 40px;
+        margin: 0 auto;
+    }
+}
+
+.qanda {
+    width: 45%;
+    margin: 48px 0;
+    background-color: white;
+    border-radius: 56px;
+    border: solid 2px $color-blue;
+    transition: all 0.5s;
+    overflow: hidden;
+
+    &[open] {
+        animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    summary {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        list-style: none;
+        outline: none;
+
+        span {
+            font-size: 48px;
+            margin: 32px 48px;
+        }
+
+        h2 {
+            width: 60%;
+            margin: 32px 0;
+        }
+    }
+
+    summary::-webkit-details-marker {
+        display:none;
+    }
+
+    .qanda_box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        
+        span {
+            font-size: 48px;
+            margin: 32px 48px;
+        }
+
+        h2 {
+            width: 60%;
+            margin: 32px 0;
+        }
+    }
+
+    p {
+        width: 80%;
+        margin: 0 auto 48px;
+    }
+}
+
+.top_nav {
+
+    ul {
+        width: 83%;
+
+        li {
+            a {
+                color: $color-blue;
+                font-size: 16px;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+    flex-direction: column;
+
+    img {
+        width: 13vw;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    p {
+        color: $color-black;
+        font-size: $font-size-12;
+        font-weight: 200;
+        margin-top: 24px;
+    }
+}
+
+.fotter_column {
+    width: 15%;
+
+    ul {
+        li {
+            color: $color-blue;
+            font-size: $font-size-16;
+            font-weight: 400;
+            padding: 8px;
+
+            a {
+                color: $color-black;
+                font-size: $font-size-12;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
 }
