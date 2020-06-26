@@ -141,3 +141,68 @@
         margin: 0 auto 48px;
     }
 }
+
+.top_nav {
+
+    ul {
+        width: 83%;
+
+        li {
+            a {
+                color: $color-blue;
+                font-size: 16px;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+    flex-direction: column;
+
+    img {
+        width: 13vw;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    p {
+        color: $color-black;
+        font-size: $font-size-12;
+        font-weight: 200;
+        margin-top: 24px;
+    }
+}
+
+.fotter_column {
+    width: 15%;
+
+    ul {
+        li {
+            color: $color-blue;
+            font-size: $font-size-16;
+            font-weight: 400;
+            padding: 8px;
+
+            a {
+                color: $color-black;
+                font-size: $font-size-12;
+                transition: 0.5s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
